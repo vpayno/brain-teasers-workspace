@@ -5,7 +5,8 @@ Also using this workspace to try the brain teasers in other languages.
 
 ## Brain Teasers
 
-### Three and a Bit
+<details>
+    <summary><hr3><b>Three and a Bit</b></hr3></summary>
 
 ```text
 $ cargo run --bin three_and_a_bit
@@ -15,7 +16,9 @@ Wanted: 3.4028236
    Got: 3.4028237
 ```
 
-### Non-Standard Input
+</details>
+<details>
+    <summary><hr3><b>Non-Standard Input</b></hr3></summary>
 
 ```text
 $ cargo run --bin non-std-input
@@ -45,7 +48,9 @@ Trimmed: "7"
 Incorrect!
 ```
 
-### Type Conversion
+</details>
+<details>
+    <summary><hr3><b>Type Conversion</b></hr3></summary>
 
 ```text
 $ cargo run --bin type-conversion
@@ -158,3 +163,5 @@ stack backtrace:
   35:     0x55c00e67e811 - _start
   36:                0x0 - <unknown>
 ```
+
+</details>
