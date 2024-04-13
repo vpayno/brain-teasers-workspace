@@ -165,3 +165,70 @@ stack backtrace:
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Byte-Sized Chunks</b></hr3></summary>
+
+```text
+$ cargo run --bin byte-sized-chunks
+   Compiling byte-sized-chunks v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/byte-sized-chunks)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
+     Running `target/debug/byte-sized-chunks`
+Properly handling arithmetic overflow using .checked_add() ...
+1
+9
+17
+25
+33
+41
+49
+57
+65
+73
+81
+89
+97
+105
+113
+121
+
+Properly handling arithmetic overflow using Wrapping() ...
+1
+9
+17
+25
+33
+41
+49
+57
+65
+73
+81
+89
+97
+105
+113
+121
+
+Improperly handling arithmetic overflow...
+1
+9
+17
+25
+33
+41
+49
+57
+65
+73
+81
+89
+97
+105
+113
+121
+thread 'main' panicked at byte-sized-chunks/src/main.rs:24:9:
+attempt to add with overflow
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
+
+</details>
