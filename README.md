@@ -300,3 +300,53 @@ triple: 3, "u128"
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Out of Order</b></hr3></summary>
+
+```text
+$ cargo run --bin out-of-order
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/out-of-order`
+
+unsorted floats: [
+    3.1,
+    1.2,
+    4.5,
+    0.3,
+]
+
+sorted floats: [
+    0.3,
+    1.2,
+    3.1,
+    4.5,
+]
+
+reversed floats: [
+    4.5,
+    3.1,
+    1.2,
+    0.3,
+]
+
+
+unsorted floats2: [
+    3.1,
+    1.2,
+    4.5,
+    0.3,
+    inf,
+    NaN,
+]
+
+sorted floats2: [
+    NaN,
+    0.3,
+    1.2,
+    3.1,
+    4.5,
+    inf,
+]
+```
+
+</details>
