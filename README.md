@@ -232,3 +232,22 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
 </details>
+<details>
+    <summary><hr3><b>How long is a string?</b></hr3></summary>
+
+```text
+$ cargo run --bin how-long-is-a-string
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/how-long-is-a-string`
+
+         string | length |  bytes |  chars
+------------------------------------------
+   Hello world! |     12 |     12 |     12
+            abc |      3 |      3 |      3
+          12345 |      5 |      5 |      5
+          ｡◕‿◕｡ |     15 |     15 |      5
+      ᕙ༼◕ ᴥ ◕༽ᕗ |     23 |     23 |      9
+   Héllö Wórld! |     15 |     15 |     12
+```
+
+</details>
