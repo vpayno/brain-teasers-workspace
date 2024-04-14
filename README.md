@@ -251,3 +251,18 @@ $ cargo run --bin how-long-is-a-string
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Please Reboot The Universe</b></hr3></summary>
+
+```text
+$ cargo run --bin please-reboot-the-universe
+   Compiling please-reboot-the-universe v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/please-reboot-the-universe)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.12s
+     Running `target/debug/please-reboot-the-universe`
+
+Does 0.1 + 0.2 == 0.3 ?
+0.1 + 0.2 equals 0.30000000000000004
+Please reboot the universe.
+```
+
+</details>
