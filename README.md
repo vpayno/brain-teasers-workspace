@@ -266,3 +266,23 @@ Please reboot the universe.
 ```
 
 </details>
+<details>
+    <summary><hr3><b>There and Back Again</b></hr3></summary>
+
+```text
+$ cargo run --bin there-and-back-again
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/there-and-back-again`
+
+180 Degrees in Radians = 3.1415927
+
+any number: 7
+zero to ten? 7
+
+any number: 42
+thread 'main' panicked at there-and-back-again/src/main.rs:52:41:
+called `Result::unwrap()` on an `Err` value: "Value must be between 0 and 10"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
+
+</details>
