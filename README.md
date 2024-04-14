@@ -286,3 +286,17 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Walks Like a Duck, Quacks Like a Duck</b></hr3></summary>
+
+```text
+$ cargo run --bin walks-like-a-duck-quacks-like-a-duck
+   Compiling walks-like-a-duck-quacks-like-a-duck v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/walks-like-a-duck-quacks-like-a-duck)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.10s
+     Running `target/debug/walks-like-a-duck-quacks-like-a-duck`
+   one: 1, "i32"
+double: 2, "u64"
+triple: 3, "u128"
+```
+
+</details>
