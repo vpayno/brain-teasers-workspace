@@ -1,9 +1,9 @@
 # brain-teasers-workspace
 
-Just read `Rust Brain Teasers` and I needed a place to play with the code.
+Just read [Rust Brain Teasers](https://pragprog.com/titles/hwrustbrain/rust-brain-teasers/) and I needed a place to play with the code.
 Also using this workspace to try the brain teasers in other languages.
 
-## Brain Teasers
+## Brain Teasers / Puzzle Playground
 
 <details>
     <summary><hr3><b>Three and a Bit</b></hr3></summary>
