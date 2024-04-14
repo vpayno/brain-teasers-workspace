@@ -350,3 +350,21 @@ sorted floats2: [
 ```
 
 </details>
+<details>
+    <summary><hr3><b>X Marks the Spot</b></hr3></summary>
+
+```text
+$ cargo run --bin x-marks-the-spot
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/x-marks-the-spot`
+
+X (bytes:[
+    88,
+]) is not equal to Ｘ (bytes:[
+    239,
+    188,
+    184,
+])
+```
+
+</details>
