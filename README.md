@@ -368,3 +368,24 @@ X (bytes:[
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Stacking Boxes</b></hr3></summary>
+
+```text
+$ cargo run --bin stacking-boxes
+   Compiling stacking-boxes v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/stacking-boxes)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.13s
+     Running `target/debug/stacking-boxes`
+
+thread 'main' has overflowed its stack
+fatal runtime error: stack overflow
+
+$ cargo run --bin stacking-boxes --release
+   Compiling stacking-boxes v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/stacking-boxes)
+    Finished release [optimized] target(s) in 0.10s
+     Running `target/release/stacking-boxes`
+
+Box Length: 10000000
+```
+
+</details>
