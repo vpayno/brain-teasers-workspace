@@ -389,3 +389,43 @@ Box Length: 10000000
 ```
 
 </details>
+<details>
+    <summary><hr3><b>Amnesia</b></hr3></summary>
+
+```text
+$ sudo cgcreate -g memory:rust_mem_cg
+
+$ echo 100M | sudo tee /sys/fs/cgroup/memory/myGroup/memory.limit_in_bytes
+100M
+
+$ echo 200M | sudo tee /sys/fs/cgroup/memory/myGroup/memory.memsw.limit_in_bytes
+200M
+
+$ cargo build --bin amnesia
+   Compiling amnesia v0.1.0 (/home/vpayno/git_vpayno/brain-teasers-workspace/amnesia)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.11s
+
+$ sudo cgexec -g memory:rust_mem_cg target/debug/amnesia
+Using std::mem::forget() to intentionally leak memory
+counter: 0
+counter: 1000
+counter: 2000
+counter: 3000
+counter: 4000
+counter: 5000
+counter: 6000
+counter: 7000
+counter: 8000
+counter: 9000
+counter: 10000
+counter: 11000
+counter: 12000
+counter: 13000
+counter: 14000
+counter: 15000
+counter: 16000
+counter: 17000
+Killed
+```
+
+</details>
